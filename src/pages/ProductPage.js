@@ -9,9 +9,9 @@ const ProductPage = () => {
   const { id } = useParams();
 
   useEffect(() => fetchProductById(id), [fetchProductById, id]);
-
+  console.log(product);
   return (
-    <Container p={{t: "3rem"}}>
+    <Container p={{ t: "3rem" }}>
       <Row d="flex" style={{ columnGap: "3rem" }}>
         <Col>
           {product.images && (
@@ -33,6 +33,9 @@ const ProductPage = () => {
           </Text>
           <Text textSize="1.2rem" tag="h2">
             {product.variants && product.variants[0].price} €
+          </Text>
+          <Text textSize="1rem" w="15rem">
+            {product.description && product.description}
           </Text>
           <Button onClick={() => addLineItem(product.variants[0].id)} w="12rem">
             Add to

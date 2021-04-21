@@ -56,6 +56,7 @@ class ShopContextProvider extends Component {
     );
 
     this.setState({ checkout });
+    this.openCart();
   };
 
   updatingLineItems = async (productId, quantity) => {
