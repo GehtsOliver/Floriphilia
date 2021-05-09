@@ -20,10 +20,12 @@ const ProductItem = ({ product }) => {
                 bgImg={product.images[0].src}
               ></Div>
               <Row>
-                <Text textColor="black">{product.title}</Text>
+                <Text textColor="black" m="0 auto" tag="h2">
+                  {product.title}
+                </Text>
               </Row>
               <Row>
-                <Text textColor="black">
+                <Text textColor="black" m="0 auto" tag="h3">
                   {product.variants && product.variants[0].price} €
                 </Text>
               </Row>

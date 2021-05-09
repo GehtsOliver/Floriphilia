@@ -17,20 +17,20 @@ const Footer = ({ className }) => {
         style={{ columnGap: "1rem" }}
       >
         <Anchor href="https://www.instagram.com/gehts.o/">
-          <Icon name="Instagram" size="2rem" />
+          <Icon color="white" name="Instagram" size="2rem" />
         </Anchor>
         <Anchor href="https://www.linkedin.com/in/oliver-gr%C3%A4tz-a360aa155/">
-          <Icon name="Linkedin" size="2rem" />
+          <Icon color="white" name="Linkedin" size="2rem" />
         </Anchor>
         <Anchor href="mailto:mail@Olivergraetz.com">
-          <Icon name="Email" size="2rem" />
+          <Icon color="white" name="Email" size="2rem" />
         </Anchor>
       </Row>
       <Row>
-        <Text m="auto" textSize="1.1rem" textColor="gray" tag="h2">
+        <Text m="auto" textSize="1.1rem" tag="h2">
           Floriphilia ©
         </Text>
-        <Text m="auto" textSize="1.1rem" textColor="gray" tag="h2">
+        <Text m="auto" textSize="1.1rem" tag="h2">
           Code and Design by{" "}
           <Anchor href="https://olivergraetz.com">Oliver Grätz</Anchor>
         </Text>
@@ -40,15 +40,12 @@ const Footer = ({ className }) => {
 };
 
 const StyledFooter = styled(Footer)`
-  padding: 0 10vw;
+  padding: 2rem 10vw;
   display: flex;
+  background: #05386B;
   flex-direction: column;
-  min-height: 8rem;
-
-  a {
-    color: black !important;
-    text-decoration: underline;
-  }
+  min-height: 15rem;
+  color: white !important;
 `;
 
 export default StyledFooter;

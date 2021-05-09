@@ -5,7 +5,6 @@ import Quantity from "./Quantity";
 
 const SideDrawerComponent = () => {
   const { checkout, isCartOpen, closeCart } = useContext(ShopContext);
-  console.log(checkout);
   return (
     <SideDrawer
       d="flex"
@@ -43,7 +42,14 @@ const SideDrawerComponent = () => {
             {checkout.totalPrice} €
           </Text>
         </Row>
-        <Anchor href={checkout.webUrl} p="1rem" bg="black" d="flex" justify="center" align="center">
+        <Anchor
+          href={checkout.webUrl}
+          p="1rem"
+          bg="black"
+          d="flex"
+          justify="center"
+          align="center"
+        >
           <Text textColor="white" textSize="1.4rem" tag="h2">
             Checkout
           </Text>

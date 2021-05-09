@@ -19,6 +19,7 @@ class ShopContextProvider extends Component {
     localStorage.checkout
       ? this.fetchCheckout(localStorage.checkout)
       : this.createCheckout();
+    this.fetchProducts();
   }
 
   createCheckout = async () => {

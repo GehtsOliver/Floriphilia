@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { ShopContext } from "../context/ShopContext";
 
+import { Icon } from "atomize";
+
 const Container = styled("div")`
   display: flex;
   justify-content: center;
@@ -10,21 +12,23 @@ const Container = styled("div")`
   h3 {
     font-size: 1rem;
   }
+  padding: 1.5rem 0;
 `;
 
 const Control = styled("div")`
-  color: black;
-  font-weight: bold;
-  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  :disabled {
+    color: white;
+  }
 `;
 
 const PaginationComponent = ({ nextProducts, backProducts, productsMin }) => {
   const { products } = useContext(ShopContext);
-  const productsMax = products.length;
+  const productsMax = productsMin + 8;
 
   return (
     <Container>
@@ -33,20 +37,20 @@ const PaginationComponent = ({ nextProducts, backProducts, productsMin }) => {
         onClick={() => backProducts()}
         bg="#BC986A"
       >
-        Back
+        <Icon name="LeftArrow" size="1.5rem" />
       </Control>
       <div>
         <h3>
-          Products {productsMin} - {productsMax}
+          {productsMin} - {productsMax}
         </h3>
       </div>
 
       <Control
-        disabled={productsMax === products.length}
+        disabled={productsMax >= products.length}
         onClick={() => nextProducts()}
         bg="#BC986A"
       >
-        Next
+        <Icon name="RightArrow" size="1.5rem" />
       </Control>
     </Container>
   );
