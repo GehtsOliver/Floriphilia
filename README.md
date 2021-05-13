@@ -4,11 +4,11 @@
 
 ![Floriphilia eCommerce](https://res.cloudinary.com/djiqhmzqs/image/upload/v1620888181/Floriphilia_Main_12273db0d0.jpg "Floriphilia eCommerce")
 
-## Live-Demo: [I'm an inline-style link with title](https://floriphilia.vercel.app/ "Floriphilia eCommerce") 
+### Live-Demo: [Floriphilia eCommerce](https://floriphilia.vercel.app/ "Floriphilia eCommerce") 
 
 ### This simple eCommerce website was primarily created with React on the Frontend combined with the Shopify Storefront API as backend.
 
-## Packages Used:
+### Packages Used:
 
 + Atomize: Design System for React JS
 + React-Router-dom: Library for frontend routing
