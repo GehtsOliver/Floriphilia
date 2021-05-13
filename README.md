@@ -1,12 +1,15 @@
 ## Floriphilia eCommerce 
 
-### eCommerce website of a fictitous flower merchant
+### Excerpt
+eCommerce website of a fictitous flower merchant
 
 ![Floriphilia eCommerce](https://res.cloudinary.com/djiqhmzqs/image/upload/v1620888181/Floriphilia_Main_12273db0d0.jpg "Floriphilia eCommerce")
 
-### Live-Demo: [Floriphilia eCommerce](https://floriphilia.vercel.app/ "Floriphilia eCommerce") 
+### Live-Demo: 
+[Floriphilia eCommerce](https://floriphilia.vercel.app/ "Floriphilia eCommerce") 
 
-### This simple eCommerce website was primarily created with React on the Frontend combined with the Shopify Storefront API as backend.
+### Description
+This simple eCommerce website was primarily created with React on the Frontend combined with the Shopify Storefront API as backend.
 
 ### Frameworks/Libraries Used
 + ReactJS: A JavaScript library for building user interfaces
