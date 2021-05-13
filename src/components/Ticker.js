@@ -1,4 +1,4 @@
-import { Div, Row, Text } from "atomize";
+import { Div } from "atomize";
 import React, { useContext } from "react";
 import Ticker from "react-ticker";
 import { ShopContext } from "../context/ShopContext";

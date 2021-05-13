@@ -5,7 +5,7 @@ import ProductPage from "./pages/ProductPage";
 import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
 import Navbar from "./components/Navbar";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import SideDrawerComponent from "./components/SideDrawerComponent";
