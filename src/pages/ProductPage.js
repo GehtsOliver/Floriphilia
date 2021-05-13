@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import { Col, Container, Row, Div, Text, Button, Icon } from "atomize";
 import { ShopContext } from "../context/ShopContext";
+import { toast } from "react-toastify";
 
 const ProductPage = () => {
   const { fetchProductById, product, addLineItem } = useContext(ShopContext);
@@ -12,11 +13,12 @@ const ProductPage = () => {
   console.log(product);
   return (
     <Container minH="92vh" p={{ y: "2.8rem" }}>
-      <Row d="flex" style={{ columnGap: "3rem" }}>
+      <Row d="flex"  flexDir="column" align="center" style={{ rowGap: "3rem" }}>
         <Col>
           {product.images && (
             <Div
-              h="40rem"
+              h="50vh"
+              w="50vw"
               bgPos="center center"
               bgImg={product.images[0].src}
             ></Div>
@@ -37,7 +39,12 @@ const ProductPage = () => {
           <Text textSize="1rem" w="15rem">
             {product.description && product.description}
           </Text>
-          <Button bg="#05386B" onClick={() => addLineItem(product.variants[0].id)} w="12rem">
+          <Button bg="#05386B" onClick={() => {
+            addLineItem(product.variants[0].id)
+            toast.success(`${product.title} added to Cart 🌷`, {
+              position: "bottom-left",
+            })
+            }} w="12rem">
             Add to
             <Icon name="Bag" size="20px" color="white" m={{ l: "0.3rem" }} />
           </Button>

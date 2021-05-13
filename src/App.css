@@ -1,15 +1,14 @@
 :root {
   --primary-blue: #05386b;
-  --primary-green: #379682;
-  --bg-green: #5cdb95;
+  --bg-green: #02da63;
   --secondary-green: #8ee4af;
-  --secondary-gray: #edf5e1;
 }
 
 .App {
   background: linear-gradient(180deg,#02da63 70%, black 99% );
   font-family: Helvetica, sans-serif;
   color: white;
+  overflow-x: hidden !important;
 }
 
 a {

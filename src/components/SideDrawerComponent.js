@@ -12,6 +12,10 @@ const SideDrawerComponent = () => {
       justify="space-between"
       isOpen={isCartOpen}
       onClose={closeCart}
+      bg="#02AE4F"
+      border="1px solid"
+      borderColor="#042D56"
+      w="22rem"
     >
       <Div>
         {checkout.lineItems &&
@@ -45,7 +49,7 @@ const SideDrawerComponent = () => {
         <Anchor
           href={checkout.webUrl}
           p="1rem"
-          bg="black"
+          bg="#042D56"
           d="flex"
           justify="center"
           align="center"

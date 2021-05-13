@@ -26,7 +26,7 @@ const Footer = ({ className }) => {
           <Icon color="white" name="Email" size="2rem" />
         </Anchor>
       </Row>
-      <Row>
+      <Row style={{marginTop: "2rem"}}>
         <Text m="auto" textSize="1.1rem" tag="h2">
           Floriphilia ©
         </Text>
