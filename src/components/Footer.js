@@ -17,22 +17,22 @@ const Footer = ({ className }) => {
         style={{ columnGap: "1rem" }}
       >
         <Anchor href="https://www.instagram.com/gehts.o/">
-          <Icon color="white" name="Instagram" size="2rem" />
+          <Icon color="black" name="Instagram" size="2rem" />
         </Anchor>
         <Anchor href="https://www.linkedin.com/in/oliver-gr%C3%A4tz-a360aa155/">
-          <Icon color="white" name="Linkedin" size="2rem" />
+          <Icon color="black" name="Linkedin" size="2rem" />
         </Anchor>
         <Anchor href="mailto:mail@Olivergraetz.com">
-          <Icon color="white" name="Email" size="2rem" />
+          <Icon color="black" name="Email" size="2rem" />
         </Anchor>
       </Row>
       <Row style={{marginTop: "2rem"}}>
-        <Text m="auto" textSize="1.1rem" tag="h2">
+        <Text m="auto" textColor="black" textSize="1.1rem" tag="h2">
           Floriphilia ©
         </Text>
-        <Text m="auto" textSize="1.1rem" tag="h2">
-          Code and Design by{" "}
-          <Anchor href="https://olivergraetz.com">Oliver Grätz</Anchor>
+        <Text m="auto" textColor="black" textSize="1.1rem" tag="h2">
+          Code and Design by{" "} 
+          <Anchor textColor="white" textDecor="underline" href="https://olivergraetz.com">Oliver Grätz</Anchor>👨
         </Text>
       </Row>
     </Div>
@@ -42,10 +42,10 @@ const Footer = ({ className }) => {
 const StyledFooter = styled(Footer)`
   padding: 2rem 10vw;
   display: flex;
-  background: #05386B;
+  background: #029E48;
   flex-direction: column;
   min-height: 15rem;
-  color: white !important;
+  color: #000 !important;
 `;
 
 export default StyledFooter;
